@@ -17,20 +17,14 @@ export default function Story({direction}) {
             .addEventListener('scroll', function () {
                 const pos1 = elt1.current.offsetTop - window.scrollY - window.innerHeight
                 const pos2 = elt2.current.offsetTop - window.scrollY - window.innerHeight
-                pos1 < 0
-                    ? setTimeout(() => {
+                if (pos1 < 0)
+                    setTimeout(() => {
                         setReveal1('reveal')
                     }, 500)
-                    : setTimeout(() => {
-                        setReveal1()
-                    }, 500);
-                pos2 < 0
-                    ? setTimeout(() => {
+                if (pos2 < 0)
+                    setTimeout(() => {
                         setReveal2('reveal')
                     }, 800)
-                    : setTimeout(() => {
-                        setReveal2()
-                    }, 500);
             })
     })
 

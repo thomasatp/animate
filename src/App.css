@@ -3,19 +3,34 @@ html, body {
   font-size: 10px;
   line-height: 1.5;
   background-color: #ffffff;
-  -webkit-font-smoothing: antialiased
+  color: #292929;
+  -webkit-font-smoothing: antialiased;
+  cursor: url('./medias/img1.jpg'), auto;	
+  
 }
-
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hidden {
   opacity: 0;
-  transform: translateY(50px) scale(0.95);
-  transition: transform ease-out .5s;
-  transition: opacity ease-out .5s;
+  transform: translateY(50px);
+  transition: all ease-out .8s;
+}
+
+.hidden2 {
+  transform: scale(1.1);
+  transition: all ease-out 1.6s;
 }
 
 .reveal {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
+}
+
+.reveal2 {
+  transform: scale(1);
 }
 
 .cover {
@@ -68,23 +83,24 @@ html, body {
 /* Strate starter */
 
 .starter {
+  display: flex;
   position: relative;
   height: 100vh;
+  justify-content: center;
   margin-bottom: calc(100vw / 25 * 2);
 }
 
 
 .text-starter {
   position: absolute;
-  bottom: 40%;
   text-align: center;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   width: 40vw;
-  padding: 0 30vw;
 }
+
 
 .text-starter .title{
   margin-bottom: 10px;
@@ -104,16 +120,11 @@ html, body {
     margin-bottom: calc(100vw / 25 * 4);
   }
   .text-starter {
-    width: 92vw;
+    width: 84vw;
     padding: 0 4vw;
-    bottom: 30%;
   }
   .text-starter .title{
-    font-size: 3rem;
-  }
-  .text-starter .title{
-    margin-bottom: 10px;
-    font-size: 2.2rem;
+    font-size: 3rem!important;
   }
 }
 
@@ -158,9 +169,9 @@ html, body {
     margin-bottom: calc(100vw / 25 * 4);
   }
   .img-story--3-4 {
-    width: 92vw;
-    height: 92vw;
-    padding: 0 4vw;
+    width: 100vw;
+    height: 100vw;
+    padding: 0;
   }
   .text-story {
     width: 92vw;
@@ -178,9 +189,8 @@ html, body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 8vw;
+  width: 84vw;
   margin-bottom: calc(100vw / 25 * 2);
-  position: relative;
 }
 
 .visual-one {
@@ -246,5 +256,43 @@ html, body {
   .text-visual-story .title{
     margin-bottom: 10px;
     font-size: 2.2rem;
+  }
+}
+
+/* Strate visual story */
+
+.strate-push {
+  display: flex;
+  width: 92vw;
+  justify-content: space-between;
+  margin-bottom: calc(100vw / 25 * 2);
+}
+
+.push-item {
+  display: flex;
+  flex-direction: column;
+  width: 28vw;
+}
+
+.push-item .img {
+  height: 39vw;
+}
+.push-item .link {
+  color: #292929;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 767px) {
+  .strate-push {
+    flex-direction: column;
+    margin-bottom: calc(100vw / 25 * 2);
+  }
+  .push-item {
+    width: 92vw;
+    margin-bottom: calc(100vw / 25 * 2);
+  }
+  .push-item .img {
+    height: 92vw;
   }
 }
