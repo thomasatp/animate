@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/animate/static/css/main.d498deed.chunk.css",
-    "main.js": "/animate/static/js/main.90573f49.chunk.js",
-    "main.js.map": "/animate/static/js/main.90573f49.chunk.js.map",
+    "main.js": "/animate/static/js/main.6f0dc868.chunk.js",
+    "main.js.map": "/animate/static/js/main.6f0dc868.chunk.js.map",
     "runtime-main.js": "/animate/static/js/runtime-main.19416d95.js",
     "runtime-main.js.map": "/animate/static/js/runtime-main.19416d95.js.map",
     "static/js/2.c37236e6.chunk.js": "/animate/static/js/2.c37236e6.chunk.js",
@@ -14,6 +14,7 @@
     "static/js/2.c37236e6.chunk.js.LICENSE.txt": "/animate/static/js/2.c37236e6.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/animate/static/media/Helvetica73BoldExtended.0beafafd.woff",
     "static/media/account.7df86561.svg": "/animate/static/media/account.7df86561.svg",
+    "static/media/arrowLeft.b2d9ac2b.svg": "/animate/static/media/arrowLeft.b2d9ac2b.svg",
     "static/media/arrowRight.c2ef03b2.svg": "/animate/static/media/arrowRight.c2ef03b2.svg",
     "static/media/bag.d701e72c.svg": "/animate/static/media/bag.d701e72c.svg",
     "static/media/burger.745851fe.svg": "/animate/static/media/burger.745851fe.svg",
@@ -47,6 +48,6 @@
     "static/js/runtime-main.19416d95.js",
     "static/js/2.c37236e6.chunk.js",
     "static/css/main.d498deed.chunk.css",
-    "static/js/main.90573f49.chunk.js"
+    "static/js/main.6f0dc868.chunk.js"
   ]
 }
